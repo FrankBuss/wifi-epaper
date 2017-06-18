@@ -1,0 +1,1438 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32L433
+LIBS:wireless-modules
+LIBS:st32l433test-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32L433CCT6 U1
+U 1 1 594681F0
+P 5450 3650
+F 0 "U1" H 4600 5100 50  0000 L BNN
+F 1 "STM32L433CCT6" H 5900 2200 50  0000 L BNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 5500 3650 50  0001 C CIN
+F 3 "" H 5700 3550 50  0001 C CNN
+	1    5450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 59468291
+P 3550 2400
+F 0 "Y1" H 3550 2550 50  0000 C CNN
+F 1 "32.768 kHz" H 3550 2250 50  0000 C CNN
+F 2 "crystal:crystal" H 3550 2400 50  0001 C CNN
+F 3 "" H 3550 2400 50  0001 C CNN
+	1    3550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 59468388
+P 3150 2600
+F 0 "C1" H 3175 2700 50  0000 L CNN
+F 1 "n/a" H 3175 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3188 2450 50  0001 C CNN
+F 3 "" H 3150 2600 50  0001 C CNN
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59468413
+P 4150 3050
+F 0 "R1" V 4230 3050 50  0000 C CNN
+F 1 "12 k" V 4150 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4080 3050 50  0001 C CNN
+F 3 "" H 4150 3050 50  0001 C CNN
+	1    4150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5946847A
+P 7200 2400
+F 0 "D1" H 7200 2500 50  0000 C CNN
+F 1 "LED" H 7200 2300 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 7200 2400 50  0001 C CNN
+F 3 "" H 7200 2400 50  0001 C CNN
+	1    7200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J30
+U 1 1 594684C9
+P 3000 3300
+F 0 "J30" H 3000 3400 50  0001 C CNN
+F 1 "NRST" H 3100 3300 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3000 3300 50  0001 C CNN
+F 3 "" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 59468563
+P 3150 2800
+F 0 "#PWR01" H 3150 2550 50  0001 C CNN
+F 1 "GND" H 3150 2650 50  0000 C CNN
+F 2 "" H 3150 2800 50  0001 C CNN
+F 3 "" H 3150 2800 50  0001 C CNN
+	1    3150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5946870C
+P 3900 2800
+F 0 "#PWR02" H 3900 2550 50  0001 C CNN
+F 1 "GND" H 3900 2650 50  0000 C CNN
+F 2 "" H 3900 2800 50  0001 C CNN
+F 3 "" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 594687E1
+P 3900 2600
+F 0 "C2" H 3925 2700 50  0000 L CNN
+F 1 "n/a" H 3925 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3938 2450 50  0001 C CNN
+F 3 "" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5946897A
+P 3900 3050
+F 0 "#PWR03" H 3900 2800 50  0001 C CNN
+F 1 "GND" H 3900 2900 50  0000 C CNN
+F 2 "" H 3900 3050 50  0001 C CNN
+F 3 "" H 3900 3050 50  0001 C CNN
+	1    3900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J32
+U 1 1 59468AB1
+P 3000 3500
+F 0 "J32" H 3000 3600 50  0001 C CNN
+F 1 "TMS_SWDIO" H 3100 3500 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3000 3500 50  0001 C CNN
+F 3 "" H 3000 3500 50  0001 C CNN
+	1    3000 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J33
+U 1 1 59468AE0
+P 3000 3600
+F 0 "J33" H 3000 3700 50  0001 C CNN
+F 1 "TDO_SWO" H 3100 3600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3000 3600 50  0001 C CNN
+F 3 "" H 3000 3600 50  0001 C CNN
+	1    3000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 59468B06
+P 5450 1350
+F 0 "#PWR04" H 5450 1200 50  0001 C CNN
+F 1 "+3.3V" H 5450 1490 50  0000 C CNN
+F 2 "" H 5450 1350 50  0001 C CNN
+F 3 "" H 5450 1350 50  0001 C CNN
+	1    5450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 59468B86
+P 3300 3700
+F 0 "#PWR05" H 3300 3550 50  0001 C CNN
+F 1 "+3.3V" V 3300 3950 50  0000 C CNN
+F 2 "" H 3300 3700 50  0001 C CNN
+F 3 "" H 3300 3700 50  0001 C CNN
+	1    3300 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 59468BAF
+P 3400 3800
+F 0 "#PWR06" H 3400 3550 50  0001 C CNN
+F 1 "GND" H 3400 3650 50  0000 C CNN
+F 2 "" H 3400 3800 50  0001 C CNN
+F 3 "" H 3400 3800 50  0001 C CNN
+	1    3400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J34
+U 1 1 59468BD8
+P 3000 3700
+F 0 "J34" H 3000 3800 50  0001 C CNN
+F 1 "VAPP" H 3100 3700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3000 3700 50  0001 C CNN
+F 3 "" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J35
+U 1 1 59468C0B
+P 3000 3800
+F 0 "J35" H 3000 3900 50  0001 C CNN
+F 1 "GND" H 3100 3800 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3000 3800 50  0001 C CNN
+F 3 "" H 3000 3800 50  0001 C CNN
+	1    3000 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 59468DF8
+P 7500 2400
+F 0 "#PWR07" H 7500 2150 50  0001 C CNN
+F 1 "GND" H 7500 2250 50  0000 C CNN
+F 2 "" H 7500 2400 50  0001 C CNN
+F 3 "" H 7500 2400 50  0001 C CNN
+	1    7500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 59468E34
+P 6850 2400
+F 0 "R2" V 6930 2400 50  0000 C CNN
+F 1 "1 k" V 6850 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6780 2400 50  0001 C CNN
+F 3 "" H 6850 2400 50  0001 C CNN
+	1    6850 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 59469267
+P 6200 1950
+F 0 "C3" H 6225 2050 50  0000 L CNN
+F 1 "100 nF" H 6225 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6238 1800 50  0001 C CNN
+F 3 "" H 6200 1950 50  0001 C CNN
+	1    6200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 59469539
+P 6550 1950
+F 0 "C4" H 6575 2050 50  0000 L CNN
+F 1 "100 nF" H 6575 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6588 1800 50  0001 C CNN
+F 3 "" H 6550 1950 50  0001 C CNN
+	1    6550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 59469580
+P 6900 1950
+F 0 "C5" H 6925 2050 50  0000 L CNN
+F 1 "100 nF" H 6925 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6938 1800 50  0001 C CNN
+F 3 "" H 6900 1950 50  0001 C CNN
+	1    6900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 594695CE
+P 7250 1950
+F 0 "C6" H 7275 2050 50  0000 L CNN
+F 1 "100 nF" H 7275 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7288 1800 50  0001 C CNN
+F 3 "" H 7250 1950 50  0001 C CNN
+	1    7250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 59469758
+P 7650 1950
+F 0 "C7" H 7675 2050 50  0000 L CNN
+F 1 "4.7 uF" H 7675 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7688 1800 50  0001 C CNN
+F 3 "" H 7650 1950 50  0001 C CNN
+	1    7650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59469A76
+P 7650 2200
+F 0 "#PWR08" H 7650 1950 50  0001 C CNN
+F 1 "GND" H 7650 2050 50  0000 C CNN
+F 2 "" H 7650 2200 50  0001 C CNN
+F 3 "" H 7650 2200 50  0001 C CNN
+	1    7650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5946A30B
+P 5150 5300
+F 0 "#PWR09" H 5150 5050 50  0001 C CNN
+F 1 "GND" H 5150 5150 50  0000 C CNN
+F 2 "" H 5150 5300 50  0001 C CNN
+F 3 "" H 5150 5300 50  0001 C CNN
+	1    5150 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2400 4250 2550
+Wire Wire Line
+	4250 2550 4400 2550
+Wire Wire Line
+	4400 2450 4400 2150
+Wire Wire Line
+	4400 2150 3150 2150
+Wire Wire Line
+	3150 2150 3150 2450
+Wire Wire Line
+	3400 2400 3150 2400
+Connection ~ 3150 2400
+Wire Wire Line
+	3700 2400 4250 2400
+Wire Wire Line
+	3900 2400 3900 2450
+Connection ~ 3900 2400
+Wire Wire Line
+	4400 3050 4300 3050
+Wire Wire Line
+	3900 3050 4000 3050
+Wire Wire Line
+	3200 3300 4400 3300
+Wire Wire Line
+	4400 3400 3200 3400
+Wire Wire Line
+	3200 3500 4400 3500
+Wire Wire Line
+	4400 3600 3200 3600
+Wire Wire Line
+	3200 3700 3300 3700
+Wire Wire Line
+	3200 3800 3400 3800
+Wire Wire Line
+	7000 2400 7050 2400
+Wire Wire Line
+	5450 1600 5450 2100
+Wire Wire Line
+	5600 1750 5600 2100
+Connection ~ 5450 1750
+Wire Wire Line
+	5750 1750 5750 2100
+Connection ~ 5600 1750
+Wire Wire Line
+	5900 1750 5900 2100
+Connection ~ 5750 1750
+Wire Wire Line
+	6050 1750 6050 2100
+Connection ~ 5900 1750
+Wire Wire Line
+	6200 1750 6200 1800
+Connection ~ 6050 1750
+Wire Wire Line
+	6550 1750 6550 1800
+Connection ~ 6200 1750
+Wire Wire Line
+	6900 1750 6900 1800
+Connection ~ 6550 1750
+Wire Wire Line
+	7250 1750 7250 1800
+Connection ~ 6900 1750
+Connection ~ 7250 1750
+Wire Wire Line
+	7650 1750 7650 1800
+Wire Wire Line
+	6200 2100 6200 2150
+Wire Wire Line
+	6200 2150 7650 2150
+Wire Wire Line
+	6550 2150 6550 2100
+Wire Wire Line
+	6900 2150 6900 2100
+Connection ~ 6550 2150
+Wire Wire Line
+	7250 2150 7250 2100
+Connection ~ 6900 2150
+Connection ~ 7250 2150
+Wire Wire Line
+	7650 2100 7650 2200
+Connection ~ 7650 2150
+Wire Wire Line
+	5150 5150 5150 5300
+Wire Wire Line
+	5150 5200 5600 5200
+Wire Wire Line
+	5300 5200 5300 5150
+Connection ~ 5150 5200
+Wire Wire Line
+	5450 5200 5450 5150
+Connection ~ 5300 5200
+Wire Wire Line
+	5600 5200 5600 5150
+Connection ~ 5450 5200
+Text Notes 1950 3850 0    60   ~ 0
+ST-LINK/V2\nprogrammer
+$Comp
+L CONN_01X01 J31
+U 1 1 59468A51
+P 3000 3400
+F 0 "J31" H 3000 3500 50  0001 C CNN
+F 1 "TCK_SWCLK" H 3100 3400 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3000 3400 50  0001 C CNN
+F 3 "" H 3000 3400 50  0001 C CNN
+	1    3000 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 2800 3150 2750
+Wire Wire Line
+	3900 2800 3900 2750
+Wire Wire Line
+	6650 3450 8500 3450
+Wire Wire Line
+	6650 3550 8500 3550
+Wire Wire Line
+	6650 3850 8500 3850
+$Comp
+L NRF51822-04 U2
+U 1 1 5946D2C5
+P 9300 3550
+F 0 "U2" H 8800 4050 60  0000 C CNN
+F 1 "NRF51822-04" H 9900 2900 60  0000 C CNN
+F 2 "NRF51822-04:NRF51822-04" H 8400 3050 60  0001 C CNN
+F 3 "" H 8400 3050 60  0001 C CNN
+	1    9300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J49
+U 1 1 5946D5CB
+P 8200 3250
+F 0 "J49" H 8200 3350 50  0001 C CNN
+F 1 "BLE-NC" H 8300 3250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J44
+U 1 1 5946D6D5
+P 7450 3100
+F 0 "J44" H 7450 3200 50  0001 C CNN
+F 1 "BLE-RXD" H 7550 3100 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7450 3100 50  0001 C CNN
+F 3 "" H 7450 3100 50  0001 C CNN
+	1    7450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 J45
+U 1 1 5946D70D
+P 7550 3100
+F 0 "J45" H 7550 3200 50  0001 C CNN
+F 1 "BLE-TXD" H 7650 3100 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 J46
+U 1 1 5946D745
+P 7650 3100
+F 0 "J46" H 7650 3200 50  0001 C CNN
+F 1 "BLE-INT" H 7750 3100 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7650 3100 50  0001 C CNN
+F 3 "" H 7650 3100 50  0001 C CNN
+	1    7650 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 J47
+U 1 1 5946D77D
+P 7750 3100
+F 0 "J47" H 7750 3200 50  0001 C CNN
+F 1 "BLE-TEST" H 7850 3100 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7750 3100 50  0001 C CNN
+F 3 "" H 7750 3100 50  0001 C CNN
+	1    7750 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 J48
+U 1 1 5946D7B5
+P 7850 3100
+F 0 "J48" H 7850 3200 50  0001 C CNN
+F 1 "BLE-ENABLE" H 7950 3100 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7850 3100 50  0001 C CNN
+F 3 "" H 7850 3100 50  0001 C CNN
+	1    7850 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 J43
+U 1 1 5946D7ED
+P 7350 3100
+F 0 "J43" H 7350 3200 50  0001 C CNN
+F 1 "BLE-RESET" H 7450 3100 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7350 3100 50  0001 C CNN
+F 3 "" H 7350 3100 50  0001 C CNN
+	1    7350 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 3250 8500 3250
+Wire Wire Line
+	7350 3300 7350 4500
+Connection ~ 7350 3350
+Wire Wire Line
+	7450 3300 7450 3450
+Connection ~ 7450 3450
+Wire Wire Line
+	7550 3300 7550 3550
+Connection ~ 7550 3550
+Wire Wire Line
+	7650 3300 7650 3650
+Connection ~ 7650 3650
+Wire Wire Line
+	7750 3300 7750 3750
+Connection ~ 7750 3750
+Wire Wire Line
+	7850 3300 7850 3850
+Connection ~ 7850 3850
+$Comp
+L CONN_01X01 J53
+U 1 1 5946DCBB
+P 10350 3700
+F 0 "J53" H 10350 3800 50  0001 C CNN
+F 1 "BLE-SWDCLK" H 10450 3700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10350 3700 50  0001 C CNN
+F 3 "" H 10350 3700 50  0001 C CNN
+	1    10350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J54
+U 1 1 5946DCF3
+P 10350 3800
+F 0 "J54" H 10350 3900 50  0001 C CNN
+F 1 "BLE-SWDIO" H 10450 3800 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10350 3800 50  0001 C CNN
+F 3 "" H 10350 3800 50  0001 C CNN
+	1    10350 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2550 6650 2400
+Wire Wire Line
+	6650 2400 6700 2400
+Wire Wire Line
+	7350 2400 7500 2400
+$Comp
+L GND #PWR010
+U 1 1 5946E0A0
+P 9100 4500
+F 0 "#PWR010" H 9100 4250 50  0001 C CNN
+F 1 "GND" H 9100 4350 50  0000 C CNN
+F 2 "" H 9100 4500 50  0001 C CNN
+F 3 "" H 9100 4500 50  0001 C CNN
+	1    9100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4350 9100 4500
+Wire Wire Line
+	9100 4450 9300 4450
+Wire Wire Line
+	9200 4450 9200 4350
+Connection ~ 9100 4450
+Wire Wire Line
+	9300 4450 9300 4350
+Connection ~ 9200 4450
+Wire Wire Line
+	10100 3700 10150 3700
+Wire Wire Line
+	10100 3800 10150 3800
+$Comp
+L CONN_01X01 J50
+U 1 1 5946E390
+P 9400 4600
+F 0 "J50" H 9400 4700 50  0001 C CNN
+F 1 "BLE-NC" H 9500 4600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 9400 4600 50  0001 C CNN
+F 3 "" H 9400 4600 50  0001 C CNN
+	1    9400 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 J52
+U 1 1 5946E3C8
+P 9500 4600
+F 0 "J52" H 9500 4700 50  0001 C CNN
+F 1 "BLE-NC" H 9600 4600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 9500 4600 50  0001 C CNN
+F 3 "" H 9500 4600 50  0001 C CNN
+	1    9500 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 4350 9400 4400
+Wire Wire Line
+	9500 4350 9500 4400
+$Comp
+L +3.3V #PWR011
+U 1 1 5946E67E
+P 9300 2700
+F 0 "#PWR011" H 9300 2550 50  0001 C CNN
+F 1 "+3.3V" H 9300 2840 50  0000 C CNN
+F 2 "" H 9300 2700 50  0001 C CNN
+F 3 "" H 9300 2700 50  0001 C CNN
+	1    9300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3850 4400 3850
+Wire Wire Line
+	4400 3950 4400 3950
+Wire Wire Line
+	4400 4350 4400 4350
+Text GLabel 4400 3850 0    60   Input ~ 0
+SPI2-MOSI
+Text GLabel 4400 3950 0    60   Input ~ 0
+SPI2-MISO
+Text GLabel 4400 4350 0    60   Input ~ 0
+SPI2-SCK
+$Comp
+L CONN_02X10 J40
+U 1 1 5946EC68
+P 4450 6650
+F 0 "J40" H 4450 7200 50  0000 C CNN
+F 1 "crystalfontz adapter" V 4450 6650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 4450 5450 50  0001 C CNN
+F 3 "" H 4450 5450 50  0001 C CNN
+	1    4450 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 6200 2    60   Input ~ 0
+PA1
+Text GLabel 4700 6300 2    60   Input ~ 0
+PB0
+Text GLabel 4700 6400 2    60   Input ~ 0
+PA3
+Text GLabel 4700 6500 2    60   Input ~ 0
+SPI2-SCK
+Text GLabel 4200 6300 0    60   Input ~ 0
+PA2
+Text GLabel 4200 6400 0    60   Input ~ 0
+PA4
+Text GLabel 4200 6500 0    60   Input ~ 0
+SPI2-MOSI
+$Comp
+L GND #PWR012
+U 1 1 5946F56C
+P 5000 7050
+F 0 "#PWR012" H 5000 6800 50  0001 C CNN
+F 1 "GND" H 5000 6900 50  0000 C CNN
+F 2 "" H 5000 7050 50  0001 C CNN
+F 3 "" H 5000 7050 50  0001 C CNN
+	1    5000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR013
+U 1 1 5946F621
+P 5000 6750
+F 0 "#PWR013" H 5000 6600 50  0001 C CNN
+F 1 "+3.3V" H 5000 6890 50  0000 C CNN
+F 2 "" H 5000 6750 50  0001 C CNN
+F 3 "" H 5000 6750 50  0001 C CNN
+	1    5000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 7000 5000 7000
+Wire Wire Line
+	5000 7000 5000 7050
+Text GLabel 6650 2650 2    60   Input ~ 0
+PA1
+Text GLabel 6650 2750 2    60   Input ~ 0
+PA2
+Text GLabel 6650 2850 2    60   Input ~ 0
+PA3
+Text GLabel 6650 2950 2    60   Input ~ 0
+PA4
+Text GLabel 6650 3050 2    60   Input ~ 0
+PA5
+Text GLabel 6650 3150 2    60   Input ~ 0
+PA6
+Text GLabel 6650 3250 2    60   Input ~ 0
+PA7
+Text GLabel 6650 4100 2    60   Input ~ 0
+PB0
+Text GLabel 6650 4200 2    60   Input ~ 0
+PB1
+Text GLabel 6650 4300 2    60   Input ~ 0
+PB2
+Text GLabel 6650 4400 2    60   Input ~ 0
+PB4
+Text GLabel 7900 4600 2    60   Input ~ 0
+I2C1-SCL
+Text GLabel 7900 4700 2    60   Input ~ 0
+I2C1-SDA
+$Comp
+L CONN_01X09 J28
+U 1 1 594704B9
+P 2100 6550
+F 0 "J28" H 2100 7050 50  0000 C CNN
+F 1 "pervasive display adapter" V 2200 6550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H 2100 6550 50  0001 C CNN
+F 3 "" H 2100 6550 50  0001 C CNN
+	1    2100 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 6150 0    60   Input ~ 0
+SPI2-MOSI
+Text GLabel 1900 6250 0    60   Input ~ 0
+SPI2-SCK
+Text GLabel 1900 6350 0    60   Input ~ 0
+PA5
+Text GLabel 1900 6450 0    60   Input ~ 0
+PA6
+Text GLabel 1900 6550 0    60   Input ~ 0
+PA7
+Text GLabel 1900 6650 0    60   Input ~ 0
+PB1
+Text GLabel 4400 4550 0    60   Input ~ 0
+PB8
+Text GLabel 4400 4450 0    60   Input ~ 0
+PB9
+Text GLabel 1900 6750 0    60   Input ~ 0
+PB8
+Wire Wire Line
+	5000 6900 4700 6900
+$Comp
+L +3.3V #PWR014
+U 1 1 59470CB1
+P 1800 7300
+F 0 "#PWR014" H 1800 7150 50  0001 C CNN
+F 1 "+3.3V" H 1800 7440 50  0000 C CNN
+F 2 "" H 1800 7300 50  0001 C CNN
+F 3 "" H 1800 7300 50  0001 C CNN
+	1    1800 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 59470CF2
+P 1450 7000
+F 0 "#PWR015" H 1450 6750 50  0001 C CNN
+F 1 "GND" H 1450 6850 50  0000 C CNN
+F 2 "" H 1450 7000 50  0001 C CNN
+F 3 "" H 1450 7000 50  0001 C CNN
+	1    1450 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6950 1900 6950
+Wire Wire Line
+	1900 6850 1450 6850
+Wire Wire Line
+	1450 6850 1450 7000
+$Comp
+L CONN_02X07 J26
+U 1 1 59470EAE
+P 1750 5300
+F 0 "J26" H 1750 5700 50  0000 C CNN
+F 1 "pervasive display module" V 1750 5300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 1750 4100 50  0001 C CNN
+F 3 "" H 1750 4100 50  0001 C CNN
+	1    1750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 59470FED
+P 1350 4850
+F 0 "#PWR016" H 1350 4600 50  0001 C CNN
+F 1 "GND" H 1350 4700 50  0000 C CNN
+F 2 "" H 1350 4850 50  0001 C CNN
+F 3 "" H 1350 4850 50  0001 C CNN
+	1    1350 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 4850 1350 5000
+Wire Wire Line
+	1350 5000 1500 5000
+$Comp
+L +3.3V #PWR017
+U 1 1 594710E6
+P 2200 4700
+F 0 "#PWR017" H 2200 4550 50  0001 C CNN
+F 1 "+3.3V" H 2200 4840 50  0000 C CNN
+F 2 "" H 2200 4700 50  0001 C CNN
+F 3 "" H 2200 4700 50  0001 C CNN
+	1    2200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5000 2200 5000
+Text GLabel 1500 5100 0    60   Input ~ 0
+SPI2-SCK
+Text GLabel 2000 5100 2    60   Input ~ 0
+SPI2-MOSI
+Text GLabel 1500 5200 0    60   Input ~ 0
+SPI2-MISO
+Text GLabel 2000 5200 2    60   Input ~ 0
+PB9
+Text GLabel 1500 5300 0    60   Input ~ 0
+PB2
+Text GLabel 4400 4250 0    60   Input ~ 0
+PB10
+Text GLabel 4400 4150 0    60   Input ~ 0
+PB11
+Text GLabel 4400 4050 0    60   Input ~ 0
+PB12
+Text GLabel 2000 5300 2    60   Input ~ 0
+PB10
+Text GLabel 1500 5400 0    60   Input ~ 0
+I2C1-SCL
+Text GLabel 2000 5400 2    60   Input ~ 0
+I2C1-SDA
+Text GLabel 6650 3350 2    60   Input ~ 0
+TIM1-CH1
+Wire Wire Line
+	7350 4500 6650 4500
+Wire Wire Line
+	7350 3350 8500 3350
+Text GLabel 1500 5500 0    60   Input ~ 0
+TIM1-CH1
+Text GLabel 2000 5500 2    60   Input ~ 0
+PB11
+Text GLabel 1500 5600 0    60   Input ~ 0
+PB12
+Text GLabel 2000 5600 2    60   Input ~ 0
+PB4
+Text GLabel 4400 4800 0    60   Input ~ 0
+PC13
+Text GLabel 4400 2700 0    60   Input ~ 0
+PH0
+Text GLabel 4400 2800 0    60   Input ~ 0
+PH1
+$Comp
+L CONN_01X01 J18
+U 1 1 59472386
+P 1150 2550
+F 0 "J18" H 1150 2650 50  0001 C CNN
+F 1 "PH0" H 1250 2550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2550 50  0001 C CNN
+F 3 "" H 1150 2550 50  0001 C CNN
+	1    1150 2550
+	-1   0    0    1   
+$EndComp
+Text Notes 1750 700  0    60   ~ 0
+test pins
+$Comp
+L CONN_01X01 J19
+U 1 1 5947248B
+P 1150 2650
+F 0 "J19" H 1150 2750 50  0001 C CNN
+F 1 "PH1" H 1250 2650 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2650 50  0001 C CNN
+F 3 "" H 1150 2650 50  0001 C CNN
+	1    1150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J20
+U 1 1 594724CF
+P 1150 2750
+F 0 "J20" H 1150 2850 50  0001 C CNN
+F 1 "SPI2-MOSI" H 1250 2750 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2750 50  0001 C CNN
+F 3 "" H 1150 2750 50  0001 C CNN
+	1    1150 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J21
+U 1 1 59472513
+P 1150 2850
+F 0 "J21" H 1150 2950 50  0001 C CNN
+F 1 "SPI2-MISO" H 1250 2850 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2850 50  0001 C CNN
+F 3 "" H 1150 2850 50  0001 C CNN
+	1    1150 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J16
+U 1 1 59472557
+P 1150 2350
+F 0 "J16" H 1150 2450 50  0001 C CNN
+F 1 "PB12" H 1250 2350 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2350 50  0001 C CNN
+F 3 "" H 1150 2350 50  0001 C CNN
+	1    1150 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J15
+U 1 1 5947259B
+P 1150 2250
+F 0 "J15" H 1150 2350 50  0001 C CNN
+F 1 "PB11" H 1250 2250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2250 50  0001 C CNN
+F 3 "" H 1150 2250 50  0001 C CNN
+	1    1150 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J14
+U 1 1 594725DF
+P 1150 2150
+F 0 "J14" H 1150 2250 50  0001 C CNN
+F 1 "PB10" H 1250 2150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2150 50  0001 C CNN
+F 3 "" H 1150 2150 50  0001 C CNN
+	1    1150 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J22
+U 1 1 59472623
+P 1150 2950
+F 0 "J22" H 1150 3050 50  0001 C CNN
+F 1 "SPI2-SCK" H 1250 2950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2950 50  0001 C CNN
+F 3 "" H 1150 2950 50  0001 C CNN
+	1    1150 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J13
+U 1 1 59472667
+P 1150 2050
+F 0 "J13" H 1150 2150 50  0001 C CNN
+F 1 "PB9" H 1250 2050 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2050 50  0001 C CNN
+F 3 "" H 1150 2050 50  0001 C CNN
+	1    1150 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J12
+U 1 1 594726AB
+P 1150 1950
+F 0 "J12" H 1150 2050 50  0001 C CNN
+F 1 "PB8" H 1250 1950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1950 50  0001 C CNN
+F 3 "" H 1150 1950 50  0001 C CNN
+	1    1150 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J17
+U 1 1 594726EF
+P 1150 2450
+F 0 "J17" H 1150 2550 50  0001 C CNN
+F 1 "PC13" H 1250 2450 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 2450 50  0001 C CNN
+F 3 "" H 1150 2450 50  0001 C CNN
+	1    1150 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J23
+U 1 1 59472733
+P 1150 3050
+F 0 "J23" H 1150 3150 50  0001 C CNN
+F 1 "I2C1-SDA" H 1250 3050 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 3050 50  0001 C CNN
+F 3 "" H 1150 3050 50  0001 C CNN
+	1    1150 3050
+	-1   0    0    1   
+$EndComp
+Text GLabel 1350 2550 2    60   Input ~ 0
+PH0
+Text GLabel 1350 2650 2    60   Input ~ 0
+PH1
+Text GLabel 1350 2750 2    60   Input ~ 0
+SPI2-MOSI
+Text GLabel 1350 2850 2    60   Input ~ 0
+SPI2-MISO
+Text GLabel 1350 2350 2    60   Input ~ 0
+PB12
+Text GLabel 1350 2250 2    60   Input ~ 0
+PB11
+Text GLabel 1350 2150 2    60   Input ~ 0
+PB10
+Text GLabel 1350 2950 2    60   Input ~ 0
+SPI2-SCK
+Text GLabel 1350 2050 2    60   Input ~ 0
+PB9
+Text GLabel 1350 1950 2    60   Input ~ 0
+PB8
+Text GLabel 1350 2450 2    60   Input ~ 0
+PC13
+$Comp
+L CONN_01X01 J24
+U 1 1 59472A39
+P 1150 3150
+F 0 "J24" H 1150 3250 50  0001 C CNN
+F 1 "I2C1-SCL" H 1250 3150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 3150 50  0001 C CNN
+F 3 "" H 1150 3150 50  0001 C CNN
+	1    1150 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J11
+U 1 1 59472A7D
+P 1150 1850
+F 0 "J11" H 1150 1950 50  0001 C CNN
+F 1 "PB4" H 1250 1850 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1850 50  0001 C CNN
+F 3 "" H 1150 1850 50  0001 C CNN
+	1    1150 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J10
+U 1 1 59472AC1
+P 1150 1750
+F 0 "J10" H 1150 1850 50  0001 C CNN
+F 1 "PB2" H 1250 1750 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1750 50  0001 C CNN
+F 3 "" H 1150 1750 50  0001 C CNN
+	1    1150 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J9
+U 1 1 59472B05
+P 1150 1650
+F 0 "J9" H 1150 1750 50  0001 C CNN
+F 1 "PB1" H 1250 1650 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1650 50  0001 C CNN
+F 3 "" H 1150 1650 50  0001 C CNN
+	1    1150 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J8
+U 1 1 59472B49
+P 1150 1550
+F 0 "J8" H 1150 1650 50  0001 C CNN
+F 1 "PB0" H 1250 1550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1550 50  0001 C CNN
+F 3 "" H 1150 1550 50  0001 C CNN
+	1    1150 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J25
+U 1 1 59472B8D
+P 1150 3250
+F 0 "J25" H 1150 3350 50  0001 C CNN
+F 1 "TIM1-CH1" H 1250 3250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 3250 50  0001 C CNN
+F 3 "" H 1150 3250 50  0001 C CNN
+	1    1150 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J7
+U 1 1 59472BD1
+P 1150 1250
+F 0 "J7" H 1150 1350 50  0001 C CNN
+F 1 "PA7" H 1250 1250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1250 50  0001 C CNN
+F 3 "" H 1150 1250 50  0001 C CNN
+	1    1150 1250
+	-1   0    0    1   
+$EndComp
+Text GLabel 1350 3050 2    60   Input ~ 0
+I2C1-SDA
+Text GLabel 1350 3150 2    60   Input ~ 0
+I2C1-SCL
+Text GLabel 1350 1850 2    60   Input ~ 0
+PB4
+Text GLabel 1350 1750 2    60   Input ~ 0
+PB2
+Text GLabel 1350 1650 2    60   Input ~ 0
+PB1
+Text GLabel 1350 1550 2    60   Input ~ 0
+PB0
+$Comp
+L CONN_01X01 J6
+U 1 1 59472DFE
+P 1150 1150
+F 0 "J6" H 1150 1250 50  0001 C CNN
+F 1 "PA6" H 1250 1150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1150 50  0001 C CNN
+F 3 "" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J5
+U 1 1 59472E42
+P 1150 1050
+F 0 "J5" H 1150 1150 50  0001 C CNN
+F 1 "PA5" H 1250 1050 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1050 50  0001 C CNN
+F 3 "" H 1150 1050 50  0001 C CNN
+	1    1150 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J4
+U 1 1 59472E86
+P 1150 950
+F 0 "J4" H 1150 1050 50  0001 C CNN
+F 1 "PA4" H 1250 950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 950 50  0001 C CNN
+F 3 "" H 1150 950 50  0001 C CNN
+	1    1150 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J3
+U 1 1 59472ECA
+P 1150 850
+F 0 "J3" H 1150 950 50  0001 C CNN
+F 1 "PA3" H 1250 850 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 850 50  0001 C CNN
+F 3 "" H 1150 850 50  0001 C CNN
+	1    1150 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J2
+U 1 1 59472F0E
+P 1150 750
+F 0 "J2" H 1150 850 50  0001 C CNN
+F 1 "PA2" H 1250 750 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 750 50  0001 C CNN
+F 3 "" H 1150 750 50  0001 C CNN
+	1    1150 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J1
+U 1 1 59472F52
+P 1150 650
+F 0 "J1" H 1150 750 50  0001 C CNN
+F 1 "PA1" H 1250 650 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 650 50  0001 C CNN
+F 3 "" H 1150 650 50  0001 C CNN
+	1    1150 650 
+	-1   0    0    1   
+$EndComp
+Text GLabel 1350 3250 2    60   Input ~ 0
+TIM1-CH1
+Text GLabel 1350 1250 2    60   Input ~ 0
+PA7
+Text GLabel 1350 1150 2    60   Input ~ 0
+PA6
+Text GLabel 1350 1050 2    60   Input ~ 0
+PA5
+Text GLabel 1350 950  2    60   Input ~ 0
+PA4
+Text GLabel 1350 850  2    60   Input ~ 0
+PA3
+Text GLabel 1350 750  2    60   Input ~ 0
+PA2
+Text GLabel 1350 650  2    60   Input ~ 0
+PA1
+$Comp
+L CONN_01X02 J27
+U 1 1 59473385
+P 2000 7150
+F 0 "J27" H 2000 7300 50  0000 C CNN
+F 1 "POWER-PERVASIVE-ADAPTER" H 2650 7100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2000 7150 50  0001 C CNN
+F 3 "" H 2000 7150 50  0001 C CNN
+	1    2000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J41
+U 1 1 59473447
+P 5200 6850
+F 0 "J41" H 5200 7000 50  0000 C CNN
+F 1 "POWER-CRYSTALFONTZ" V 5300 6850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5200 6850 50  0001 C CNN
+F 3 "" H 5200 6850 50  0001 C CNN
+	1    5200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J29
+U 1 1 594734E5
+P 2400 4850
+F 0 "J29" H 2400 5000 50  0000 C CNN
+F 1 "POWER-PERVASIVE-MODULE" H 3000 4850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2400 4850 50  0001 C CNN
+F 3 "" H 2400 4850 50  0001 C CNN
+	1    2400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J51
+U 1 1 5947364E
+P 9500 2800
+F 0 "J51" H 9500 2950 50  0000 C CNN
+F 1 "POWER-BLE" V 9600 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9500 2800 50  0001 C CNN
+F 3 "" H 9500 2800 50  0001 C CNN
+	1    9500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J42
+U 1 1 59473712
+P 5250 1550
+F 0 "J42" H 5250 1700 50  0000 C CNN
+F 1 "POWER-CPU" V 5350 1550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5250 1550 50  0001 C CNN
+F 3 "" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 1350 5450 1500
+Wire Wire Line
+	1800 7300 1800 7200
+Wire Wire Line
+	1800 7100 1800 6950
+Wire Wire Line
+	5000 6750 5000 6800
+Wire Wire Line
+	9300 2700 9300 2750
+Wire Wire Line
+	9300 2850 9300 2900
+Wire Wire Line
+	2200 4700 2200 4800
+Wire Wire Line
+	2200 5000 2200 4900
+$Comp
+L R R3
+U 1 1 594758F1
+P 7550 4350
+F 0 "R3" V 7630 4350 50  0000 C CNN
+F 1 "3k3" V 7550 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7480 4350 50  0001 C CNN
+F 3 "" H 7550 4350 50  0001 C CNN
+	1    7550 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 59475A00
+P 7750 4350
+F 0 "R4" V 7830 4350 50  0000 C CNN
+F 1 "3k3" V 7750 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7680 4350 50  0001 C CNN
+F 3 "" H 7750 4350 50  0001 C CNN
+	1    7750 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR018
+U 1 1 59475AC0
+P 7550 4100
+F 0 "#PWR018" H 7550 3950 50  0001 C CNN
+F 1 "+3.3V" H 7550 4240 50  0000 C CNN
+F 2 "" H 7550 4100 50  0001 C CNN
+F 3 "" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4100 7550 4200
+Wire Wire Line
+	7550 4150 7750 4150
+Wire Wire Line
+	7750 4150 7750 4200
+Connection ~ 7550 4150
+Wire Wire Line
+	6650 4600 7900 4600
+Wire Wire Line
+	6650 4700 7900 4700
+Wire Wire Line
+	7550 4500 7550 4600
+Connection ~ 7550 4600
+Wire Wire Line
+	7750 4500 7750 4700
+Connection ~ 7750 4700
+Text Notes 7500 6950 0    197  ~ 39
+e-paper display test
+$Comp
+L +3.3V #PWR019
+U 1 1 5947734B
+P 3850 1250
+F 0 "#PWR019" H 3850 1100 50  0001 C CNN
+F 1 "+3.3V" H 3850 1390 50  0000 C CNN
+F 2 "" H 3850 1250 50  0001 C CNN
+F 3 "" H 3850 1250 50  0001 C CNN
+	1    3850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 594773A1
+P 3850 1750
+F 0 "#PWR020" H 3850 1500 50  0001 C CNN
+F 1 "GND" H 3850 1600 50  0000 C CNN
+F 2 "" H 3850 1750 50  0001 C CNN
+F 3 "" H 3850 1750 50  0001 C CNN
+	1    3850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J36
+U 1 1 59477410
+P 4050 1250
+F 0 "J36" H 4050 1350 50  0001 C CNN
+F 1 "+3.3V" H 4150 1250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4050 1250 50  0001 C CNN
+F 3 "" H 4050 1250 50  0001 C CNN
+	1    4050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J37
+U 1 1 59477498
+P 4050 1500
+F 0 "J37" H 4050 1600 50  0001 C CNN
+F 1 "GND" H 4150 1500 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4050 1500 50  0001 C CNN
+F 3 "" H 4050 1500 50  0001 C CNN
+	1    4050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J38
+U 1 1 594775F1
+P 4050 1600
+F 0 "J38" H 4050 1700 50  0001 C CNN
+F 1 "GND" H 4150 1600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4050 1600 50  0001 C CNN
+F 3 "" H 4050 1600 50  0001 C CNN
+	1    4050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J39
+U 1 1 59477647
+P 4050 1700
+F 0 "J39" H 4050 1800 50  0001 C CNN
+F 1 "GND" H 4150 1700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4050 1700 50  0001 C CNN
+F 3 "" H 4050 1700 50  0001 C CNN
+	1    4050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1500 3850 1750
+Connection ~ 3850 1700
+Connection ~ 3850 1600
+Wire Wire Line
+	5450 1750 7650 1750
+Text GLabel 7250 3650 0    60   Input ~ 0
+PH0
+Text GLabel 7250 3750 0    60   Input ~ 0
+PH1
+Wire Wire Line
+	7250 3650 8500 3650
+Wire Wire Line
+	7250 3750 8500 3750
+Text GLabel 6650 3650 2    60   Input ~ 0
+PA11
+Text GLabel 6650 3750 2    60   Input ~ 0
+PA12
+Text GLabel 1350 1350 2    60   Input ~ 0
+PA11
+Text GLabel 1350 1450 2    60   Input ~ 0
+PA12
+$Comp
+L CONN_01X01 J55
+U 1 1 59479E01
+P 1150 1350
+F 0 "J55" H 1150 1450 50  0001 C CNN
+F 1 "PA11" H 1250 1350 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1350 50  0001 C CNN
+F 3 "" H 1150 1350 50  0001 C CNN
+	1    1150 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J56
+U 1 1 59479E51
+P 1150 1450
+F 0 "J56" H 1150 1550 50  0001 C CNN
+F 1 "PA12" H 1250 1450 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1150 1450 50  0001 C CNN
+F 3 "" H 1150 1450 50  0001 C CNN
+	1    1150 1450
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

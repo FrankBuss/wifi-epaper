@@ -1,0 +1,40 @@
++3.3V: 4.7 uF to GND
+1: VBAT: 100 nF to GND
+9: VDDA: 100 nF to GND
+24: VDD: 100 nF to GND
+36: VUSB: 100 nF to GND
+48: VDD: 100 nF to GND
+
+GND:
+8: VSSA
+23: VSS
+35: VSS
+47: VSS
+
+33: BOOT0: 12k to GND
+
+
+ST-Link SWD programming interface:
+
+37: TCK
+34: TMS
+7: NRST
+39: SWO
+
+
+10: PA0
+blinking LED
+
+
+11: PA1: BUSSEL
+12: PA2: RESET
+13: PA3: DC
+14: PA4: CS
+28: PB15: MOSI
+21: PB10: SCLK
+
+18: PB0: READY
+
+
+
+nRF51882 library from https://github.com/cyrozap/KiCad

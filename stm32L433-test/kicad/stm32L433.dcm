@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32L433CCT6
+D LQFP48, 256k Flash, 64k SRAM
+K STM32 ARM Microcontroller
+F http://www.st.com/resource/en/datasheet/stm32l433cc.pdf
+$ENDCMP
+#
+#End Doc Library

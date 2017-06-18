@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name crystal)(type KiCad)(uri /home/frank/data/projects/nixie-clock/ab18x5-breakout/crystal.pretty)(options "")(descr ""))
+  (lib (name NRF51822-04)(type KiCad)(uri "$(KIPRJMOD)/NRF51822-04.pretty")(options "")(descr ""))
+  (lib (name osh)(type KiCad)(uri "$(KIPRJMOD)/osh.pretty")(options "")(descr ""))
+)
